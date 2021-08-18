@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple 3 Projects </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                       
+                    </ul>
+                    
+                </div>
+            </nav>
+        </section>
+    </div>
+
+    <!-- This section contains 3 cards -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4 mt-3">
+                <!-- Button Age finder calculator -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropac">
+                    Try Here Age Calculator
+
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./images/3.jpg" alt="Card image cap">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Check Your Age Now</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Measure Age Here</a>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-4 mt-3">
+                <!-- Simple Calculator Component -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropsc">
+                    Try Here Simple Calculator
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./images/calc.jpg" alt="Card image cap">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Basic Calculator</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go for Math</a>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-4 mt-3">
+                <!-- //Simple Unit Converter Component -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropuc">
+                    Try Unit Converter
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./images/unit.jpg" alt="Card image cap">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Unit Converter</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go for Convert</a>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Modal  for Age Finder-->
+        <div class="modal fade" id="staticBackdropac" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Age Calculator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="container">
+                            <div class="inputs-wrapper calender">
+                                <input class="form-control bg-info" type="date" id="date-input">
+                                <button class="btn btn-primary m-2"onclick="ageCalculate()">Calculate</button>
+                            </div>
+                            <div class="outputs-wrapper cal-op">
+                                <div>
+                                    <span id="years">-</span>
+                                    <p> Years </p>
+                                </div>
+                                <div>
+                                    <span id="months"> - </span>
+                                    <p> Months </p>
+                                </div>
+                                <div>
+                                    <span id="days"> - </span>
+                                    <p> Days </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Try Another</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal  for Calculator-->
+        <div class="modal fade" id="staticBackdropsc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Simple Calculator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="container">
+                            <div id="calculator">
+                                <div id="result">
+                                    <div id="history">
+                                        <p id="history-value"></p>
+                                    </div>
+                                    <div id="output">
+                                        <p id="output-value"></p>
+                                    </div>
+                                </div>
+                                <div id="keyboard">
+                                    <button class="operator" id="clear">C</button>
+                                    <button class="operator" id="backspace">CE</button>
+                                    <button class="operator" id="%">%</button>
+                                    <button class="operator" id="/">&#247;</button>
+                                    <button class="number" id="7">7</button>
+                                    <button class="number" id="8">8</button>
+                                    <button class="number" id="9">9</button>
+                                    <button class="operator" id="*">&times;</button>
+                                    <button class="number" id="4">4</button>
+                                    <button class="number" id="5">5</button>
+                                    <button class="number" id="6">6</button>
+                                    <button class="operator" id="-">-</button>
+                                    <button class="number" id="1">1</button>
+                                    <button class="number" id="2">2</button>
+                                    <button class="number" id="3">3</button>
+                                    <button class="operator" id="+">+</button>
+                                    <button class="empty" id="empty"></button>
+                                    <button class="number" id="0">0</button>
+                                    <button class="empty" id="empty"></button>
+                                    <button class="operator" id="=">=</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Try Another</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal  for Unit Converter-->
+        <div class="modal fade" id="staticBackdropuc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width:945px" ;>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Simple Unit Converter</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <section>
+
+                            <div id="main" class="container justify-content-center text-center">
+
+
+                                <!-- input field -->
+                                <div class="row justify-content-center">
+                                    <form>
+                                        <div class="form-group mb-3">
+                                            <input id="input" type="number"
+                                                class="form-control form-control-lg text-center"
+                                                placeholder="Enter Value">
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="row ">
+                                    <!-- Start Mass Converter -->
+                                    <div id="weight" class="col-md-4">
+                                        <h1 class="display-5 text-center ">Weight</h1>
+                                        <div class="btn-group btn-group-lg mb-2" role="group" aria-label="Mass Units">
+                                            <button type="button"
+                                                class="btn btn-secondary btn-group-weight">Lbs</button>
+                                            <button type="button"
+                                                class="btn btn-secondary btn-group-weight">Kgs</button>
+                                            <button type="button" class="btn btn-secondary btn-group-weight">St</button>
+                                            <button type="button" class="btn btn-secondary btn-group-weight">Gm</button>
+                                            <button type="button" class="btn btn-secondary btn-group-weight">Oz</button>
+                                        </div>
+
+
+
+                                        <div id="output-weight" class="output hidden">
+
+                                            <div class="card bg-primary text-white mb-3 text-center">
+                                                <div class="card-block m-2">
+                                                    <h4>Pounds:</h4>
+                                                    <div id="lbsOutput">0</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card bg-secondary text-white mb-3 text-center">
+                                                <div class="card-block m-2">
+                                                    <h4>Kilograms:</h4>
+                                                    <div id="kgsOutput">0</div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-success text-white mb-3 text-center">
+                                                <div class="card-block m-2">
+                                                    <h4>Stone:</h4>
+                                                    <div id="stOutput">0</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card bg-info text-white mb-3 text-center">
+                                                <div class="card-block m-2">
+                                                    <h4>Grams:</h4>
+                                                    <div id="gmOutput">0</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card bg-dark text-white mb-3 text-center">
+                                                <div class="card-block m-2">
+                                                    <h4>Ounces:</h4>
+                                                    <div id="ozOutput">0</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- End Mass Converter -->
+
+                                    <!-- Start Length Converter -->
+                                    <div id="length" class="col-md-4 ">
+                                        <h1 class="display-5 text-center">Length</h1>
+                                        <div class="btn-group btn-group-lg mb-2" role="group" aria-label="Length Units">
+                                            <button type="button" class="btn btn-secondary btn-group-length">Mm</button>
+                                            <button type="button" class="btn btn-secondary btn-group-length">Cm</button>
+                                            <button type="button" class="btn btn-secondary btn-group-length">In</button>
+                                            <button type="button" class="btn btn-secondary btn-group-length">Ft</button>
+                                            <button type="button" class="btn btn-secondary btn-group-length">M</button>
+                                        </div>
+
+                                        <div id="output-length" class="output hidden">
+
+                                            <div class="card bg-primary text-white mb-3 text-center">
+                                                <div class="card-block m-2">
+                                                    <h4>Milimeters:</h4>
+                                                    <div id="mmOutput">0</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card bg-secondary text-white mb-3 text-center">
+                                                <div class="card-block m-2">
+                                                    <h4>Centimeters:</h4>
+                                                    <div id="cmOutput">0</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card bg-success text-white mb-3 text-center">
+                                                <div class="card-block m-2">
+                                                    <h4>Inches:</h4>
+                                                    <div id="inOutput">0</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card bg-info text-white mb-3 text-center">
+                                                <div class="card-block m-2">
+                                                    <h4>Feet:</h4>
+                                                    <div id="ftOutput">0</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card bg-dark text-white mb-3 text-center">
+                                                <div class="card-block m-2">
+                                                    <h4>Meters:</h4>
+                                                    <div id="mOutput">0</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- End Length Converter -->
+
+                                    <!-- Start Temp Converter -->
+                                    <div id="temp" class="col-md-4">
+                                        <h1 class="display-5 text-center ">Temperature</h1>
+                                        <div class="btn-group btn-group-lg mb-2" role="group" aria-label="Length Units">
+                                            <button type="button" class="btn btn-secondary btn-group-temp">C</button>
+                                            <button type="button" class="btn btn-secondary btn-group-temp">F</button>
+                                            <button type="button" class="btn btn-secondary btn-group-temp">K</button>
+                                        </div>
+
+                                        <div id="output-temp" class="output hidden">
+
+                                            <div class="card bg-primary text-white mb-3 text-center">
+                                                <div class="card-block m-2">
+                                                    <h4>Celsius:</h4>
+                                                    <div id="cOutput">0</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card bg-secondary text-white mb-3 text-center">
+                                                <div class="card-block m-2">
+                                                    <h4>Fahrenheit:</h4>
+                                                    <div id="fOutput">0</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card bg-info text-white mb-3 text-center">
+                                                <div class="card-block m-2">
+                                                    <h4>Kelvin:</h4>
+                                                    <div id="kOutput">0</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- End Unit Converter -->
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Try Another</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

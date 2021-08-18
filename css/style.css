@@ -1,0 +1,116 @@
+/* Age calculator Start Here............. */
+
+.calender input{
+	background-color: #fcd705;
+}
+
+.cal-op{
+	background-color: #f8f4f4;
+	width:350px;
+	height:300px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	font-size:25px;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+ /* Simple calculator start Here..... */
+#container{
+	height: 550px;
+	margin: 10px auto;	
+}
+#calculator{
+	width: 320px;
+	height: 520px;
+	background-color: #eaedef;
+	margin: 0 auto;
+	top: 10px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#result{
+	background-color: rgb(225, 228, 228);
+	height: 120px;
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #30302f;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+#keyboard{
+	height: 400px;
+}
+.operator, .number, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+}
+.number, .empty{
+	background-color: #eaedef;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.number{
+	border: 1px solid;
+	padding: 2px;
+	box-shadow: 3px 5px 3px  #011d1f;
+}
+.operator:active, .number:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #20b2aa;
+}
+button:nth-child(8){
+	font-size: 20px;
+	background-color: #ffa500;
+}
+button:nth-child(12){
+	font-size: 20px;
+	background-color: #f08080;
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #7d93e0;
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #9477af;
+}
+/* End Simple calculator................. */
+
+/* Unit Converter  Start Here.................... */
+.hidden {
+	visibility: hidden;
+}
+
+.form-control {
+	width: 350px;
+}
